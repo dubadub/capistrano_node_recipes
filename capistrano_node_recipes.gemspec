@@ -4,14 +4,14 @@
 # -*- encoding: utf-8 -*-
 
 Gem::Specification.new do |s|
-  s.name = "capistrano-node-deploy"
+  s.name = "capistrano_node_recipes"
   s.version = "1.2.13"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
-  s.authors = ["James Smith"]
+  s.authors = ["James Smith", "Alex Dubovskoy"]
   s.date = "2014-01-17"
   s.description = "Capistrano recipes for deploying node apps"
-  s.email = "james@loopj.com"
+  s.email = "dubovskoy.a@gmail.com"
   s.extra_rdoc_files = [
     "LICENSE.txt",
     "README.md"

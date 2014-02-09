@@ -1,4 +1,4 @@
-capistrano-node-deploy
+capistrano_node_recipes
 ======================
 
 Capistrano recipe for deploying node.js apps.
