@@ -76,20 +76,20 @@ EOD
       run "ln -s #{shared_path}/node_modules #{release_path}/node_modules"
     end
 
-    task :check_upstart_config do
-      create_upstart_config if remote_file_differs?(upstart_file_path, upstart_file_contents)
-    end
+    # task :check_upstart_config do
+    #   create_upstart_config if remote_file_differs?(upstart_file_path, upstart_file_contents)
+    # end
 
-    desc "Create upstart script for this node app"
-    task :create_upstart_config do
-      temp_config_file_path = "#{shared_path}/#{application}.conf"
+    # desc "Create upstart script for this node app"
+    # task :create_upstart_config do
+    #   temp_config_file_path = "#{shared_path}/#{application}.conf"
 
-      # Generate and upload the upstart script
-      put upstart_file_contents, temp_config_file_path
+    #   # Generate and upload the upstart script
+    #   put upstart_file_contents, temp_config_file_path
 
-      # Copy the script into place and make executable
-      sudo "cp #{temp_config_file_path} #{upstart_file_path}"
-    end
+    #   # Copy the script into place and make executable
+    #   sudo "cp #{temp_config_file_path} #{upstart_file_path}"
+    # end
 
     desc "Start the node application"
     task :start do
