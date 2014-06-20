@@ -26,7 +26,6 @@ end
 Capistrano::Configuration.instance(:must_exist).load do |configuration|
   default_run_options[:pty] = true
   before "deploy", "deploy:create_release_dir"
-  before "deploy", "node:check_upstart_config"
   before "deploy:create_symlink", "node:install_packages"
   after "deploy:update", "node:restart"
   after "deploy:rollback", "node:restart"

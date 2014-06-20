@@ -5,7 +5,7 @@
 
 Gem::Specification.new do |s|
   s.name = "capistrano_node_recipes"
-  s.version = "1.2.14"
+  s.version = "1.2.15"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["James Smith", "Alex Dubovskoy"]
@@ -24,12 +24,12 @@ Gem::Specification.new do |s|
     "README.md",
     "Rakefile",
     "VERSION",
-    "capistrano-node-deploy.gemspec",
-    "lib/capistrano-node-deploy.rb",
+    "capistrano_node_recipes.gemspec",
+    "lib/capistrano_node_recipes.rb",
     "lib/capistrano/node-deploy.rb",
     "test/helper.rb"
   ]
-  s.homepage = "http://github.com/loopj/capistrano-node-deploy"
+  s.homepage = "https://github.com/dubadub/capistrano_node_recipes"
   s.licenses = ["MIT"]
   s.require_paths = ["lib"]
   s.rubygems_version = "2.0.14"
